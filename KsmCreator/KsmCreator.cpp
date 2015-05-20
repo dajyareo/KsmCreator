@@ -36,29 +36,29 @@ void ExitKsmCreator(UINT exitCode)
 
 void usage()
 {
-	std::wcout << L"  usage: ContentPipeline.KsmCreator.exe [input MODEL]" << endl;
-	std::wcout << L"  usage: ContentPipeline.KsmCreator.exe [path to directory of MODELS] [KSM output path]" << endl;
-	std::wcout << endl;
-	std::wcout << L"  Glossary:" << endl;
-	std::wcout << L"  input MODEL:    specifies the input mesh file (DAE/3DS, etc) file" << endl;
-	std::wcout << L"  output KSM:     specifies the output KSM file" << endl;
+	wcout << L"  usage: ContentPipeline.KsmCreator.exe [input MODEL]" << endl;
+	wcout << L"  usage: ContentPipeline.KsmCreator.exe [path to directory of MODELS] [KSM output path]" << endl;
+	wcout << endl;
+	wcout << L"  Glossary:" << endl;
+	wcout << L"  input MODEL:    specifies the input mesh file (DAE/3DS, etc) file" << endl;
+	wcout << L"  output KSM:     specifies the output KSM file" << endl;
 }
 
 bool ImportBatch(
-	_In_ std::wstring dir,
-	_In_ std::wstring searchPattern,
-	_Out_ std::vector<shared_ptr<KsmModel>>& data)
+	_In_ wstring dir,
+	_In_ wstring searchPattern,
+	_Out_ vector<shared_ptr<KsmModel>>& data)
 {
 	WIN32_FIND_DATA FindFileData;
 	HANDLE hFind;
-	std::wstring fileFileArgs = dir;
+	wstring fileFileArgs = dir;
 	fileFileArgs.append(L"\\");
 	fileFileArgs.append(searchPattern);
 
-	hFind = FindFirstFileEx(fileFileArgs.c_str(), FindExInfoStandard, &FindFileData, FindExSearchNameMatch, NULL, 0);
+	hFind = FindFirstFileEx(fileFileArgs.c_str(), FindExInfoStandard, &FindFileData, FindExSearchNameMatch, nullptr, 0);
 	if (hFind == INVALID_HANDLE_VALUE) 
 	{
-		std::wcout << L"FindFirstFile failed with error:" << GetLastError() << "\nSearch Pattern: " << searchPattern;
+		wcout << L"FindFirstFile failed with error:" << GetLastError() << "\nSearch Pattern: " << searchPattern;
 		return false;
 	} 
 	else
@@ -100,7 +100,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		wchar_t currentDir[MAX_PATH];
 		GetCurrentDirectoryW(MAX_PATH, currentDir);
 
-		std::wstring savePath(currentDir);
+		wstring savePath(currentDir);
 
 		PathString inputModel(argv[1]);
 
@@ -131,7 +131,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			return 1;
 		}
 
-		std::vector< shared_ptr<KsmModel>> ksmModels;
+		vector< shared_ptr<KsmModel>> ksmModels;
 
 		ImportBatch(inputDirectory, L"*.DAE", ksmModels);
 

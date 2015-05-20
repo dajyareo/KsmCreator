@@ -27,7 +27,7 @@
 using namespace KsmCreator;
 using namespace Assimp;
 
-bool KsmModel::LoadFromDae(_In_ const std::wstring& path)
+bool KsmModel::LoadFromDae(_In_ const wstring& path)
 {
 	PathString tmpPath(path.c_str());
 	FileName = tmpPath.GetFileNameOnly();
@@ -83,9 +83,9 @@ bool KsmModel::LoadFromDae(_In_ const std::wstring& path)
 	return true;
 }
 
-bool KsmModel::Save(_In_ const std::wstring& path)
+bool KsmModel::Save(_In_ const wstring& path)
 {
-	std::wstring outputFilePath = path;
+	wstring outputFilePath = path;
 	outputFilePath.append(L"\\");
 	outputFilePath.append(FileName);
 
@@ -127,9 +127,9 @@ bool KsmModel::Save(_In_ const std::wstring& path)
 
 				for (size_t k = 0; k < numKeyFrames; ++k)
 				{
-					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].Translation), sizeof(DirectX::XMFLOAT3));
-					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].Scale), sizeof(DirectX::XMFLOAT3));
-					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].RotationQuat), sizeof(DirectX::XMFLOAT4));
+					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].Translation), sizeof(XMFLOAT3));
+					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].Scale), sizeof(XMFLOAT3));
+					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].RotationQuat), sizeof(XMFLOAT4));
 					ksmFile.write(reinterpret_cast<char*>(&AnimationClips[a].BoneAnimations[ba].Keyframes[k].TimePos), sizeof(float));
 				}
 			}
@@ -201,9 +201,9 @@ shared_ptr<KsmModelNode> KsmModel::createNodeTree(
 
 void KsmModel::extractAnimations()
 {
-	for (size_t i = 0; i < _aiScene->mNumAnimations; i++)
+	for (size_t j = 0; j < _aiScene->mNumAnimations; j++)
 	{
-		const aiAnimation* sourceAnimation = _aiScene->mAnimations[i];
+		const aiAnimation* sourceAnimation = _aiScene->mAnimations[j];
 		AnimationClip animation;
 
 		animation.TicksPerSecond = static_cast<float>(sourceAnimation->mTicksPerSecond);
@@ -361,8 +361,10 @@ void KsmModel::loadMaterial(
 		{
 			// strip off any paths and get the filename only
 			PathString texturePath(szPath.C_Str());
-			std::string filenameOnly = texturePath.GetFullFileNameN();
-			std::string tmppath("Engine\\Assets\\Textures\\Models\\");
+			string filenameOnly = texturePath.GetFullFileNameN();
+
+			// TODO: Replace this with a relative path that makes sense for where you store model textures
+			string tmppath("Engine\\Assets\\Textures\\Models\\");
 			tmppath.append(filenameOnly);
 			PathString path(tmppath.c_str());
 
@@ -376,8 +378,10 @@ void KsmModel::loadMaterial(
 		{
 			// strip off any paths and get the filename only
 			PathString texturePath(szPath.C_Str());
-			std::string filenameOnly = texturePath.GetFullFileNameN();
-			std::string tmppath("Engine\\Assets\\Textures\\Models\\");
+			string filenameOnly = texturePath.GetFullFileNameN();
+
+			// TODO: Replace this with a relative path that makes sense for where you store model textures
+			string tmppath("Engine\\Assets\\Textures\\Models\\");
 			tmppath.append(filenameOnly);
 			PathString path(tmppath.c_str());
 
@@ -448,7 +452,7 @@ void KsmModel::loadMeshData(
 	ksmMesh.IndexCount = static_cast<UINT>(ksmMesh.Indices.size());
 
 	// collect weights on all vertices
-	std::vector<std::vector<aiVertexWeight> > weightsPerVertex(mesh->mNumVertices);
+	vector<vector<aiVertexWeight> > weightsPerVertex(mesh->mNumVertices);
 	for (unsigned int a = 0; a < mesh->mNumBones; a++)
 	{
 		const aiBone* bone = mesh->mBones[a];
@@ -528,11 +532,11 @@ void KsmModel::loadMeshData(
 		aiBone* bone = mesh->mBones[b];
 
 		string narrow = bone->mName.data;
-		std::wstringstream ws;
+		wstringstream ws;
 		ws << narrow.c_str();
 		ksmBone.Name = ws.str();
 
-		XMMATRIX* tm = reinterpret_cast<DirectX::XMMATRIX*>(&bone->mOffsetMatrix);
+		XMMATRIX* tm = reinterpret_cast<XMMATRIX*>(&bone->mOffsetMatrix);
 		XMMATRIX om(*tm);
 		XMStoreFloat4x4(&ksmBone.Offset, om);
 

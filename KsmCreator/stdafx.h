@@ -34,5 +34,6 @@
 #include <DirectXMath.h>
 #include <wtypes.h>
 #include <assert.h>
+#include <memory>
 
 #include "..\KsmCreatorLib\KsmModel.h"
