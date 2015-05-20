@@ -33,6 +33,7 @@ $RECYCLE.BIN/
 *.pch
 *.res
 *.ilk
+*.ipch
 
 # =========================
 # Operating System Files
