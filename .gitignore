@@ -20,6 +20,17 @@ $RECYCLE.BIN/
 # Visual Studio Files
 *.suo
 *.sdf
+*.opensdf
+
+# Build Files
+*.pdb
+*.idb
+*.log
+*.tlog
+*.lib
+*.exe
+*.obj
+*.pch
 
 # =========================
 # Operating System Files
