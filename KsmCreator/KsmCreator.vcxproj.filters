@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="RawAssets">
+      <UniqueIdentifier>{c6681b80-327b-4e70-aa93-0f3671f9cd28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Resources">
+      <UniqueIdentifier>{ee5050b7-320e-45a3-be1b-aa06e64fc994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Buildings">
+      <UniqueIdentifier>{0f6ec7ac-31b3-4415-af79-645bc407d05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Characters">
+      <UniqueIdentifier>{11ddeff8-5ff2-4ae7-bfcd-3a0cdbccb99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Items">
+      <UniqueIdentifier>{dfcf9814-dc9d-41dd-b80f-de14ab90771c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Old">
+      <UniqueIdentifier>{cc15f81b-6011-4523-b37b-2262c98b8a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Old\Characters">
+      <UniqueIdentifier>{4c5f64a5-66e9-40ff-8973-a34bafa4c1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RawAssets\Old\Items">
+      <UniqueIdentifier>{3ae243eb-2cd7-41c2-9e93-098b6b6c7978}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KsmCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RawAssets\Buildings\Cus_BathHouse_Noren.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarScaffolding_Base.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarScaffoldingBoards_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarScaffoldingTopBoard_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTower_Base.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTower_Base0.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTower_Base1.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTower_Base2.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerPlatformLower_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerPlatformUpper_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerStones_Foundation.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerStonesEx_Foundation.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsGozaGroundLevel_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsGozaLower_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsGozaUpper_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsThatchedGroundLevel_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsThatchedLower_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsThatchedUpper_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsWoodGroundLevel_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsWoodLower_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\FourPillarTowerWallsWoodUpper_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\GozaMat.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\Handcart_Base.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\Handcart_Wheels.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\House01.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\House01_Base_4SidesGozaWall.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\House01_Base_Refinery_Boiler.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\House01_Firepit_Rocks.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\HouseFloorBoards_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\HouseFloorBoardsIoriHole_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\PyreGroundLevel_Foundation.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\SmallBoardWall_Foundation.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\SmallWoodPen_Foundation.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerMagicBoxGroundLevel_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerMagicBoxGroundLevelGeothermalTurbine_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerRoofThatched_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerRoofWood_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerRoofWoodSkylight_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerUmbrellaUpper_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerWaterWheel_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerWaterWheelMount_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\TowerWindMill_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\Umbrella.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\WedgeScaffolding_Base.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\WedgeScaffoldingBoards_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\WedgeScaffoldingBoardsBookends_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\WedgeScaffoldingSpikes_Addon.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Boulder.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Daikon1_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Daikon2_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Daikon3_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Daikon4_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Daikon5_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Mound_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Rice1_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Rice2_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Rice3_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Rice4_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Crop_Rice5_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Decal_Ground_Rocks.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Decal_Ground_Rough.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\MapleLeaf.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resources_Boulder.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bale_Oil.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bale_Sake.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bale_Shochu.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bale_Water.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bucket_Oil.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bucket_Sake.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bucket_Shochu.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Roof_Bucket_Water.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1Bamboo_Base.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1BambooTakenokoLarge_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1BambooTakenokoSmall_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1IchyouFuller_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1IchyouFullerB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1IchyouLeafPile_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1IchyouLeaves_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1IchyouLeavesB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1MapleFuller_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1MapleFullerB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1MapleLeafPile_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1MapleLeaves_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1MapleLeavesB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1PineNeedle_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1PineNeedleB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1SakuraFlowers_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1SakuraFlowersB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1SakuraFullBloom_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\TreeBasic1SakuraFullBloomB_Addon.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Characters\Hero.DAE">
+      <Filter>RawAssets\Characters</Filter>
+    </None>
+    <None Include="RawAssets\Characters\Ochimusha.DAE">
+      <Filter>RawAssets\Characters</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Axe.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Bokutou.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_BokutouTsuba.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_DosuYakuza.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Drumstick.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Houchou.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_HouchouDeba.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_HouchouYanagi.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_KatanaSamurai.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_KatanaSamuraiBroken.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_KatanaYakuza.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Nabe.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Nusa.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Rock.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Saw.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Skipjack.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\BuddhaFist_Horizontal.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\BuddhaFist_Smash.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\BuddhaFist_Vertical.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_Ekiskariba.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Items\Item_KatanaTsuba.DAE">
+      <Filter>RawAssets\Items</Filter>
+    </None>
+    <None Include="RawAssets\Buildings\House_DamagedByKaguyaPod.DAE">
+      <Filter>RawAssets\Buildings</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_OreGold.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_OreIron.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_OreSliver.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_Seaweed.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_Stone.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_WhaleMeat.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+    <None Include="RawAssets\Resources\Resource_WildGame.DAE">
+      <Filter>RawAssets\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RawAssets\Buildings\tex_shed_materials.png">
+      <Filter>RawAssets\Buildings</Filter>
+    </Image>
+    <Image Include="RawAssets\Buildings\tex_umbrella.png">
+      <Filter>RawAssets\Buildings</Filter>
+    </Image>
+    <Image Include="RawAssets\Buildings\tex_umbrellashop.png">
+      <Filter>RawAssets\Buildings</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Bamboo_512x512.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\BasicTree_512x512.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\CropGround_Planted.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\CropGround_PlantedDry.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\CropGround_PlantedWatered.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\CropGround_Tilled.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Ichyou_512x512.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Maple_512x512.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\PineLeaves_256x256.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resource_Boulder.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resource_Daikon.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resource_Herring.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resource_Mackerel.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resource_Rice.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resources_Food.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\Resources_Label.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\RiceDaikonSoy_512x512.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\SakuraFlowers_512x512.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Resources\tex_shed_materials.png">
+      <Filter>RawAssets\Resources</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\HeroClothes_Default.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\HeroFootwear_Sandals.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\HeroHair_Default.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\HeroHead_Grit.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\HeroHead_Hurt.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\HeroHead_Serious.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\Negi_Ekiskariba.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaClothes_Default.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaFootwear_Sandals.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaHead_AwkwardSmile.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaHead_Hurt.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaHead_Pant1.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaHead_Serious.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Characters\OchimushaHead_Shock.png">
+      <Filter>RawAssets\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Charging_East_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Charging_North_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Charging_South_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Charging_West_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Dig_East_&amp;F5_&amp;D5.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Dig_North_&amp;F5_&amp;D5.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Dig_South_&amp;F5_&amp;D5.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Dig_West_&amp;F5_&amp;D5.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Enguard_East_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Enguard_North_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Enguard_South_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Enguard_West_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Hit_East_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Hit_North_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Hit_South_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Hit_West_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Idle_East_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Idle_North_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Idle_South_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Idle_West_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KiaiChargeDefense_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KiaiChargeDefense_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KiaiChargeDefense_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KiaiChargeDefense_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KoteMenMenChargeAttack_East_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KoteMenMenChargeAttack_North_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KoteMenMenChargeAttack_South_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_KoteMenMenChargeAttack_West_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_OneHandStrikeAttack_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_OneHandStrikeAttack_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_OneHandStrikeAttack_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_OneHandStrikeAttack_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Run_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Run_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Run_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Run_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_SpinSpecialAttack_East_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_SpinSpecialAttack_North_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_SpinSpecialAttack_South_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_SpinSpecialAttack_West_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandSlashChargeAttack_East_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandSlashChargeAttack_North_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandSlashChargeAttack_South_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandSlashChargeAttack_West_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandStrikeAttack_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandStrikeAttack_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandStrikeAttack_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_TwoHandStrikeAttack_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Walk_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Walk_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Walk_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_Walk_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_WeaponBlockDefense_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_WeaponBlockDefense_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_WeaponBlockDefense_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Hero\Hero_WeaponBlockDefense_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Ichirou\Ichirou_Idle_East_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Ichirou\Ichirou_Idle_North_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Ichirou\Ichirou_Idle_South_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Ichirou\Ichirou_Idle_West_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_AstroThrowFinish_East_&amp;F16_&amp;D16.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_AstroThrowFinish_North_&amp;F16_&amp;D16.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_AstroThrowFinish_South_&amp;F16_&amp;D16.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_AstroThrowFinish_West_&amp;F16_&amp;D16.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_DefaultAttack_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_DefaultAttack_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_DefaultAttack_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_DefaultAttack_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Idle_East_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Idle_North_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Idle_South_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Idle_West_&amp;F1.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Walk_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Walk_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Walk_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Characters\Shibito\Shibito_Walk_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Characters</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Bachi\Bachi_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Bachi\Bachi_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Bokutou\Bokutou_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Bokutou\Bokutou_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Dosu\Dosu_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Dosu\Dosu_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Charging_East_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Charging_North_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Charging_South_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Charging_West_&amp;F8_&amp;Z0_&amp;A0!0!0!1!1!1!2!2!1!1!0!0!1!2!1!2!3.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Enguard_East_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Enguard_North_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Enguard_South_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Enguard_West_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Hit_East_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Hit_North_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Hit_South_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Hit_West_&amp;F1_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Idle_East_&amp;F1.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Idle_North_&amp;F1.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Idle_South_&amp;F1.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Idle_West_&amp;F1.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_KoteMenMenChargeAttack_East_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_KoteMenMenChargeAttack_North_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_KoteMenMenChargeAttack_South_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_KoteMenMenChargeAttack_West_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_OneHandStrikeAttack_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_OneHandStrikeAttack_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_OneHandStrikeAttack_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_OneHandStrikeAttack_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Run_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Run_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Run_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Run_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_SpinSpecialAttack_East_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_SpinSpecialAttack_North_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_SpinSpecialAttack_South_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_SpinSpecialAttack_West_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandSlashChargeAttack_East_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandSlashChargeAttack_North_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandSlashChargeAttack_South_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandSlashChargeAttack_West_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandStrikeAttack_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandStrikeAttack_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandStrikeAttack_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_TwoHandStrikeAttack_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Walk_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Walk_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Walk_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\HeroHead\HeroHead_Walk_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Houchou\Houchou_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Houchou\Houchou_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Enguard_East_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Enguard_North_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Enguard_South_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Enguard_West_&amp;F2_&amp;D2_&amp;Z8.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_KoteMenMenChargeAttack_East_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_KoteMenMenChargeAttack_North_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_KoteMenMenChargeAttack_South_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_KoteMenMenChargeAttack_West_&amp;F10_&amp;D10_&amp;Z10.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_OneHandStrikeAttack_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_OneHandStrikeAttack_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_OneHandStrikeAttack_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_OneHandStrikeAttack_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Run_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Run_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Run_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Run_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_SpinSpecialAttack_East_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_SpinSpecialAttack_North_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_SpinSpecialAttack_South_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_SpinSpecialAttack_West_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandSlashChargeAttack_East_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandSlashChargeAttack_North_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandSlashChargeAttack_South_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandSlashChargeAttack_West_&amp;F4_&amp;D4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandStrikeAttack_East_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandStrikeAttack_North_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandStrikeAttack_South_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_TwoHandStrikeAttack_West_&amp;F2_&amp;D2.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Walk_East_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Walk_North_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Walk_South_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Katana\Katana_Walk_West_&amp;F4.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Nabe\Nabe_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Nusa\Nusa_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Ono\Ono_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Shinai\Shinai_InGame.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+    <Image Include="RawAssets\Old\Items\Shinai\Shinai_DisplayTexture.png">
+      <Filter>RawAssets\Old\Items</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
