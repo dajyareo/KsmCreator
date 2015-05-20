@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Visual Studio Files
+*.suo
+*.sdf
+
 # =========================
 # Operating System Files
 # =========================
