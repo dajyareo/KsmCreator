@@ -41,114 +41,114 @@ namespace KsmCreator
 	// Holds mesh subset data
 	struct KsmModelMesh
 	{
-	KsmModelMesh()
-	{}
+		KsmModelMesh()
+		{}
 
-	void Save(_In_ ofstream& ksmFile)
-	{
-		ksmFile.write(reinterpret_cast<char*>(&NumBones), sizeof(unsigned int));
-		ksmFile.write(reinterpret_cast<char*>(&FaceCount), sizeof(unsigned int));
-		ksmFile.write(reinterpret_cast<char*>(&VertexCount), sizeof(unsigned int));
-		ksmFile.write(reinterpret_cast<char*>(&IndexCount), sizeof(unsigned int));
+		void Save(_In_ ofstream& ksmFile)
+		{
+			ksmFile.write(reinterpret_cast<char*>(&NumBones), sizeof(unsigned int));
+			ksmFile.write(reinterpret_cast<char*>(&FaceCount), sizeof(unsigned int));
+			ksmFile.write(reinterpret_cast<char*>(&VertexCount), sizeof(unsigned int));
+			ksmFile.write(reinterpret_cast<char*>(&IndexCount), sizeof(unsigned int));
 
-		ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Diffuse), sizeof(XMFLOAT4));
-		ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Ambient), sizeof(XMFLOAT4));
-		ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Reflect), sizeof(XMFLOAT4));
-		ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Specular), sizeof(XMFLOAT4));
+			ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Diffuse), sizeof(XMFLOAT4));
+			ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Ambient), sizeof(XMFLOAT4));
+			ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Reflect), sizeof(XMFLOAT4));
+			ksmFile.write(reinterpret_cast<char*>(&MeshMaterial.Specular), sizeof(XMFLOAT4));
 
-		ksmFile.write(reinterpret_cast<char*>(&MaterialOpacity), sizeof(float));
-		ksmFile.write(reinterpret_cast<char*>(&MaterialShininess), sizeof(float));
-		ksmFile.write(reinterpret_cast<char*>(&SpecularStrength), sizeof(float));
+			ksmFile.write(reinterpret_cast<char*>(&MaterialOpacity), sizeof(float));
+			ksmFile.write(reinterpret_cast<char*>(&MaterialShininess), sizeof(float));
+			ksmFile.write(reinterpret_cast<char*>(&SpecularStrength), sizeof(float));
 
-		ksmFile.write(reinterpret_cast<char*>(&SaveIndicesAs16Bit), sizeof(bool));		
+			ksmFile.write(reinterpret_cast<char*>(&SaveIndicesAs16Bit), sizeof(bool));		
 
-		ksmFile.write(reinterpret_cast<char*>(&Indices[0]), sizeof(UINT) * Indices.size());
+			ksmFile.write(reinterpret_cast<char*>(&Indices[0]), sizeof(UINT) * Indices.size());
 		
-		// One vertex vector will be full, the other empty
-		bool containsAnimations = false;
-		if (StaticVertices.size() > 0)
-		{
-			ksmFile.write(reinterpret_cast<char*>(&containsAnimations), sizeof(bool));
-			ksmFile.write(reinterpret_cast<char*>(&StaticVertices[0]), sizeof(VertexPositionNormalTexture) * StaticVertices.size());
-		}
-		else
-		{
-			containsAnimations = true;
-			ksmFile.write(reinterpret_cast<char*>(&containsAnimations), sizeof(bool));
-			ksmFile.write(reinterpret_cast<char*>(&AnimatedVertices[0]), sizeof(VertexPositionNormalTextureBoneWeight) * AnimatedVertices.size());
-		}
+			// One vertex vector will be full, the other empty
+			bool containsAnimations = false;
+			if (StaticVertices.size() > 0)
+			{
+				ksmFile.write(reinterpret_cast<char*>(&containsAnimations), sizeof(bool));
+				ksmFile.write(reinterpret_cast<char*>(&StaticVertices[0]), sizeof(VertexPositionNormalTexture) * StaticVertices.size());
+			}
+			else
+			{
+				containsAnimations = true;
+				ksmFile.write(reinterpret_cast<char*>(&containsAnimations), sizeof(bool));
+				ksmFile.write(reinterpret_cast<char*>(&AnimatedVertices[0]), sizeof(VertexPositionNormalTextureBoneWeight) * AnimatedVertices.size());
+			}
 
-		unsigned int strLen = DiffuseTexturePath.length();
-		ksmFile.write(reinterpret_cast<char*>(&strLen), sizeof(unsigned int));
-		ksmFile.write(reinterpret_cast<const char*>(DiffuseTexturePath.c_str()), strLen * sizeof(wchar_t));
-
-		strLen = NormalTexturePath.length();
-		ksmFile.write(reinterpret_cast<char*>(&strLen), sizeof(unsigned int));
-		ksmFile.write(reinterpret_cast<const char*>(NormalTexturePath.c_str()), strLen * sizeof(wchar_t));
-
-		//
-		// Write bones that affect this mesh
-		for (auto& bone : Bones)
-		{
-			strLen = bone.Name.length();
+			unsigned int strLen = DiffuseTexturePath.length();
 			ksmFile.write(reinterpret_cast<char*>(&strLen), sizeof(unsigned int));
-			ksmFile.write(reinterpret_cast<const char*>(bone.Name.c_str()), strLen * sizeof(wchar_t));
+			ksmFile.write(reinterpret_cast<const char*>(DiffuseTexturePath.c_str()), strLen * sizeof(wchar_t));
 
-			ksmFile.write(reinterpret_cast<char*>(&bone.Offset), sizeof(XMFLOAT4X4));
+			strLen = NormalTexturePath.length();
+			ksmFile.write(reinterpret_cast<char*>(&strLen), sizeof(unsigned int));
+			ksmFile.write(reinterpret_cast<const char*>(NormalTexturePath.c_str()), strLen * sizeof(wchar_t));
+
+			//
+			// Write bones that affect this mesh
+			for (auto& bone : Bones)
+			{
+				strLen = bone.Name.length();
+				ksmFile.write(reinterpret_cast<char*>(&strLen), sizeof(unsigned int));
+				ksmFile.write(reinterpret_cast<const char*>(bone.Name.c_str()), strLen * sizeof(wchar_t));
+
+				ksmFile.write(reinterpret_cast<char*>(&bone.Offset), sizeof(XMFLOAT4X4));
+			}
+
+			//
+			// Write mesh bounding box
+			ksmFile.write(reinterpret_cast<char*>(&MeshBoundingBox.Center), sizeof(XMFLOAT3));
+			ksmFile.write(reinterpret_cast<char*>(&MeshBoundingBox.Extents), sizeof(XMFLOAT3));
 		}
 
-		//
-		// Write mesh bounding box
-		ksmFile.write(reinterpret_cast<char*>(&MeshBoundingBox.Center), sizeof(XMFLOAT3));
-		ksmFile.write(reinterpret_cast<char*>(&MeshBoundingBox.Extents), sizeof(XMFLOAT3));
-	}
+		// The count of vertices that make up the mesh
+		UINT VertexCount;
 
-	// The count of vertices that make up the mesh
-	UINT VertexCount;
+		// The count of faces that makes up the mesh
+		UINT FaceCount;
 
-	// The count of faces that makes up the mesh
-	UINT FaceCount;
+		// The count of indices that makes up the mesh
+		UINT IndexCount;
 
-	// The count of indices that makes up the mesh
-	UINT IndexCount;
+		// The diffuse texture for this mesh
+		wstring DiffuseTexturePath;
 
-	// The diffuse texture for this mesh
-	wstring DiffuseTexturePath;
+		// The normal texture for this mesh
+		wstring NormalTexturePath;
 
-	// The normal texture for this mesh
-	wstring NormalTexturePath;
+		// The material for this node
+		Material MeshMaterial;
 
-	// The material for this node
-	Material MeshMaterial;
+		// The names of the bone nodes that affect this mesh
+		vector<KsmModelBone> Bones;
 
-	// The names of the bone nodes that affect this mesh
-	vector<KsmModelBone> Bones;
+		// Animated vertex buffer
+		vector<VertexPositionNormalTextureBoneWeight> AnimatedVertices;
 
-	// Animated vertex buffer
-	vector<VertexPositionNormalTextureBoneWeight> AnimatedVertices;
+		// Static vertex buffer
+		vector<VertexPositionNormalTexture> StaticVertices;
 
-	// Static vertex buffer
-	vector<VertexPositionNormalTexture> StaticVertices;
+		// Indices
+		vector<UINT> Indices;
 
-	// Indices
-	vector<UINT> Indices;
+		// If there are less than 65536 indices we can save the indices as 16 bit instead of 32
+		bool SaveIndicesAs16Bit;
 
-	// If there are less than 65536 indices we can save the indices as 16 bit instead of 32
-	bool SaveIndicesAs16Bit;
+		// opacity for the material
+		float MaterialOpacity;
 
-	// opacity for the material
-	float MaterialOpacity;
+		// shininess for the material
+		float MaterialShininess;
 
-	// shininess for the material
-	float MaterialShininess;
+		// strength of the specular highlight
+		float SpecularStrength;
 
-	// strength of the specular highlight
-	float SpecularStrength;
+		// The number of bones associated with this mesh
+		UINT NumBones;
 
-	// The number of bones associated with this mesh
-	UINT NumBones;
-
-	// The bounding box surrounding the vertices in this mesh
-	BoundingBox MeshBoundingBox;
+		// The bounding box surrounding the vertices in this mesh
+		BoundingBox MeshBoundingBox;
 	};
 }

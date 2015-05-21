@@ -435,7 +435,7 @@ void KsmModel::loadMeshData(
 
 	// check whether we can use 16 bit indices
 	ksmMesh.SaveIndicesAs16Bit = true;
-	if (mesh->mNumFaces * 3 >= 65536)
+	if (mesh->mNumFaces * nidx >= 65536)
 	{
 		ksmMesh.SaveIndicesAs16Bit = false;
 	}
